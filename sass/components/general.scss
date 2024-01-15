@@ -1,0 +1,122 @@
+@use "../abstracts/functions.scss" as f;
+@use "../abstracts/colors.scss";
+
+/*Dashboard My-balance*/
+.my-balance {
+  padding: f.rem(20px);
+  background-color: var(--color-soft-red);
+  border-radius: f.rem(10px);
+  display: flex;
+  justify-content: space-between;
+
+  & svg {
+    align-self: center;
+  }
+}
+
+.my-balance__text {
+  color: var(--color-white);
+}
+
+.my-balance__text p {
+  font-size: f.rem(12px);
+}
+
+.my-balance__text span {
+  font-size: f.rem(24px);
+  font-weight: 700;
+}
+
+/*Dashboard Spending*/
+.dashboard-spending {
+  margin-top: f.rem(20px);
+  padding: f.rem(25px) f.rem(20px);
+  background-color: var(--color-very-paleorange);
+  border-radius: f.rem(10px);
+}
+
+.chartBox {
+  position: relative;
+  max-width: f.rem(340px);
+  margin-top: f.rem(30px);
+  height: 20vh;
+  width: 80vw;
+}
+
+.primary-heading {
+  font-size: f.rem(24px);
+  color: var(--color-dark-brown);
+}
+
+.total-spending {
+  margin-top: f.rem(25px);
+  padding-top: f.rem(25px);
+  border-top: 2px solid var(--color-cream);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-month {
+  font-size: f.rem(15px);
+  color: var(--color-medium-brown);
+}
+
+.total__figure span {
+  font-size: f.rem(30px);
+  font-weight: 700;
+  color: var(--color-dark-brown);
+}
+
+.total__lastmonth {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.total__lastmonth span {
+  font-size: f.rem(15px);
+  font-weight: 700;
+  color: var(--color-dark-brown);
+}
+
+// Desktop
+@media (width > 37.5em) {
+  .my-balance {
+    padding: f.rem(20px) f.rem(40px);
+  }
+
+  .my-balance__text p {
+    font-size: f.rem(16px);
+  }
+
+  .my-balance__text span {
+    font-size: f.rem(32px);
+  }
+
+  .dashboard-spending {
+    margin-top: f.rem(20px);
+    padding: f.rem(30px) f.rem(40px);
+  }
+
+  .chartBox {
+    max-width: f.rem(680px);
+    height: 40vh;
+  }
+
+  .primary-heading {
+    font-size: f.rem(34px);
+  }
+
+  .total-month {
+    font-size: f.rem(18px);
+  }
+
+  .total__figure span {
+    font-size: f.rem(36px);
+  }
+
+  .total__lastmonth span {
+    font-size: f.rem(18px);
+  }
+
+}

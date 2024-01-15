@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script type="module" src="js/script.js"></script> 
+
+  <link rel="stylesheet" href="main.scss">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 13px; text-align: center; margin-top: 2rem; font-weight: 700;}
+    .attribution a { color: hsl(10, 79%, 65%); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <main>
+
+    <div class="dashboard-title">
+      <h1 class="visually-hidden">User's Dashboard</h1>
+
+      <div class="my-balance">
+        <div class="my-balance__text">
+          <p>My balance</p>
+          <span>$921.48</span>
+        </div>
+        <svg aria-hidden="true" focusable="false" width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+      </div>
+    </div>
+
+    <div class="dashboard-spending">
+      <h2 class="primary-heading">Spending - Last 7 days</h2>
+      <div class="chartBox">
+        <canvas class="js-dashboard-graph" aria-label="Graph with the total spending of each day" role="img">
+          <p>Graph with the total spending of each day</p>
+        </canvas>
+      </div>
+      <div class="total-spending">
+        <div class="total__figure">
+          <p class="total-month">Total this month</p>
+          <span>$478.33</span>
+        </div>
+
+        <div class="total__lastmonth">
+          <span>+2.4%</span>
+          <p class="total-month">from last month</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sung Jin Cho</a>.
+  </footer>
+</body>
+</html>
